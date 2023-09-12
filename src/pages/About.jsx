@@ -8,24 +8,24 @@ const About = () => {
   return (
     <div>
       <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-          <div class="section__pic-container">
-            <img src={myAbout} alt="about" class="about-pic" />
+        <p className="section__text__p1">Get To Know More</p>
+        <h1 className="title">About Me</h1>
+        <div className="section-container">
+          <div className="section__pic-container">
+            <img src={myAbout} alt="about" className="about-pic" />
           </div>
-          <div class="about-details-container">
-            <div class="about-containers">
-              <div class="details-container">
-                <img src={myExpert} alt="Experience icon" class="icon" />
+          <div className="about-details-container">
+            <div className="about-containers">
+              <div className="details-container">
+                <img src={myExpert} alt="Experience icon" className="icon" />
                 <h3>Experience</h3>
                 <p>
                   2+ years <br />
                   Frontend Development
                 </p>
               </div>
-              <div class="details-container">
-                <img src={myEdu} alt="Education icon" class="icon" />
+              <div className="details-container">
+                <img src={myEdu} alt="Education icon" className="icon" />
                 <h3>Education</h3>
                 <p>
                   B.Sc. Bachelors Degree
@@ -34,7 +34,7 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <div class="text-container">
+            <div className="text-container">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
                 quis reprehenderit et laborum, rem, dolore eum quod voluptate
@@ -46,7 +46,7 @@ const About = () => {
         <img
           src={myArrow}
           alt="Arrow icon"
-          class="icon arrow"
+          className="icon arrow"
           onclick="location.href='./#experience'"
         />
       </section>

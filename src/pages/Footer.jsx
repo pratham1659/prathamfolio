@@ -5,8 +5,8 @@ const Footer = () => {
     <div>
       <footer>
         <nav>
-          <div class="nav-links-container">
-            <ul class="nav-links">
+          <div className="nav-links-container">
+            <ul className="nav-links">
               <li>
                 <a href="#about">About</a>
               </li>

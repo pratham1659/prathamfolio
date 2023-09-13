@@ -13,10 +13,7 @@ const Project = () => {
             <div className="projects-grid">
               <div className="pro pro__1 undefined">
                 <div className="pro__img">
-                  <a
-                    target="_blank"
-                    href="https://car-rental-ten.vercel.app/"
-                    rel="noreferrer">
+                  <a target="_blank" href="#noContentRightNow" rel="noreferrer">
                     <img
                       src={carRental}
                       alt="website"
@@ -29,23 +26,28 @@ const Project = () => {
                 </div>
                 <div className="pro__text">
                   <h3>
-                    Car Rental
-                    <span className="date-className">(February 2023)</span> 🚗
+                    StyleByPratham
+                    <span className="date-className">(July 2023)</span> 🚗
                   </h3>
                   <p>
-                    A car rental website is an online platform that allows users
-                    to rent cars for personal or business use. The website
-                    provides an interface for searching, comparing, and
-                    reserving cars.
+                    "StyleByPratham" eCommerce platform developed using React
+                    and Spring Boot. It offers seamless login and signup
+                    features for users. The use of JWT Authentication enhances
+                    security of sensitive data during interactions.
+                    Additionally, the project incorporates a robust admin panel,
+                    where admin can efficiently manage products, user accounts,
+                    and orders. With a focus on user convenience and data
+                    protection.
                   </p>
                   <div className="stack">
                     <p>React</p>
-                    <p>SCSS</p>
+                    <p>Spring Boot</p>
+                    <p>MySql</p>
                   </div>
                   <div className="links">
                     <a
                       target="_blank"
-                      href="https://github.com/stefvndev/car-rental"
+                      href="#noContentRightNow"
                       rel="noreferrer">
                       Code
                       <svg
@@ -64,7 +66,7 @@ const Project = () => {
                     </a>
                     <a
                       target="_blank"
-                      href="https://car-rental-ten.vercel.app/"
+                      href="#noContentRightNow"
                       rel="noreferrer">
                       Live Demo
                       <svg
@@ -88,10 +90,7 @@ const Project = () => {
               </div>
               <div className="pro pro__1 reversed-proj">
                 <div className="pro__img">
-                  <a
-                    target="_blank"
-                    href="https://coindom-crypto-search.vercel.app/"
-                    rel="noreferrer">
+                  <a target="_blank" href="#noContentRightNow" rel="noreferrer">
                     <img
                       src={coinDom}
                       alt="website"
@@ -104,21 +103,26 @@ const Project = () => {
                 </div>
                 <div className="pro__text">
                   <h3>
-                    Coindom
-                    <span className="date-className">(February 2023)</span> 🪙
+                    Invoice filtering WebApp
+                    <span className="date-className">(Apr 2022)</span>
                   </h3>
                   <p>
-                    Coindom is a crypto app that allows users to search for
-                    information about various cryptocurrencies in real-time.
+                    Developed a user-friendly React frontend for efficient
+                    invoice submission, tracking, and management. The backend is
+                    powered by Servlets, effectively processing and storing
+                    invoice data in MySQL. This project offers a streamlined
+                    invoice filtering web app experience, enhancing productivity
+                    and organization.
                   </p>
                   <div className="stack">
                     <p>React</p>
-                    <p>SCSS</p>
+                    <p>Spring Boot</p>
+                    <p>MySql</p>
                   </div>
                   <div className="links">
                     <a
                       target="_blank"
-                      href="https://github.com/stefvndev/coindom-crypto"
+                      href="#noContentRightNow"
                       rel="noreferrer">
                       Code
                       <svg
@@ -137,7 +141,7 @@ const Project = () => {
                     </a>
                     <a
                       target="_blank"
-                      href="https://coindom-crypto-search.vercel.app/"
+                      href="#noContentRightNow"
                       rel="noreferrer">
                       Live Demo
                       <svg

@@ -18,15 +18,13 @@ const About = () => {
                 based in Bangalore, India 📍
               </h4>
               <p>
-                As a Junior FullStack Developer, I possess an impressive arsenal
-                of skills in HTML, CSS, JavaScript, React, Tailwind, and SCSS. I
-                excel in designing and maintaining responsive websites that
-                offer a smooth user experience. My expertise lies in crafting
-                dynamic, engaging interfaces through writing clean and optimized
-                code and utilizing cutting-edge development tools and
-                techniques. I am also a team player who thrives in collaborating
-                with cross-functional teams to produce outstanding web
-                applications.
+                I am a driven engineering student with a passion for software
+                development. My academic background and hands-on experience in
+                Java, ReactJs, and various technologies equip me to contribute
+                effectively to innovative projects. I am eager to collaborate on
+                challenging assignments and continue my growth as a software
+                engineer. Open to new opportunities and connections in the tech
+                world.
               </p>
             </div>
           </div>

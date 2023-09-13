@@ -1,5 +1,8 @@
 import React from "react";
 
+const linkedin = "https://www.linkedin.com/in/pratham1659";
+const github = "https://github.com/pratham1659";
+
 const Footer = () => {
   return (
     <div>
@@ -12,7 +15,7 @@ const Footer = () => {
                 aria-label="linkedin"
                 target="_blank"
                 rel="noreferrer"
-                href="#linkedin">
+                href={linkedin}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"
@@ -35,7 +38,7 @@ const Footer = () => {
                 aria-label="github"
                 target="_blank"
                 rel="noreferrer"
-                href="#github">
+                href={github}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="30"

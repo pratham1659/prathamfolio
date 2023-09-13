@@ -390,6 +390,7 @@ a {
   background-size: cover;
   height: 35rem;
   position: relative;
+  border-radius: 50%;
   transition: all 1s ease-in-out;
   width: 35rem;
 }
@@ -655,7 +656,7 @@ a {
 }
 .img-side__main-img {
   border-radius: 1.7rem;
-  height: 38rem;
+  height: 40rem;
   width: 40rem;
 }
 @media (max-width: 1020px) {

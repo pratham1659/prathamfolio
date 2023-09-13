@@ -1,10 +1,12 @@
 import React from "react";
-import waveHand from "./img/waving-hand.png";
-import myResume from "../assets/resume-example.pdf";
+import waveHand from "../assets/waving-hand.png";
+import myResume from "../assets/myResume.pdf";
 
 const skillsImg1 = "https://skillicons.dev/icons?i=html,css";
 const skillsImg2 = "https://skillicons.dev/icons?i=js,react";
 const skillsImg3 = "https://skillicons.dev/icons?i=spring,nodejs";
+const linkedin = "https://www.linkedin.com/in/pratham1659";
+const github = "https://github.com/pratham1659";
 
 const Profile = () => {
   const openPdfInNewTab = () => {
@@ -32,7 +34,7 @@ const Profile = () => {
                     aria-label="linkedin"
                     rel="noreferrer"
                     target="_blank"
-                    href="#linkedin">
+                    href={linkedin}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -55,7 +57,7 @@ const Profile = () => {
                     aria-label="github"
                     rel="noreferrer"
                     target="_blank"
-                    href="#github">
+                    href={github}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -71,11 +73,11 @@ const Profile = () => {
                     </svg>
                   </a>
                   {/* button part executive */}
-                  <button class="btn btn-color-2" onClick={openPdfInNewTab}>
+                  <button className="btn btn-color-2" onClick={openPdfInNewTab}>
                     Download CV
                   </button>
                   <button
-                    class="btn btn-color-1"
+                    className="btn btn-color-1"
                     onClick={() => (window.location.href = "#contact")}>
                     Contact Info
                   </button>

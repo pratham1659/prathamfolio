@@ -1,6 +1,6 @@
 import React from "react";
-import carRental from "./img/car-rental.webp";
-import coinDom from "./img/coindom.png";
+import carRental from "../assets/car-rental.webp";
+import coinDom from "../assets/coindom.png";
 
 const Project = () => {
   return (

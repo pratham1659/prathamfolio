@@ -11,7 +11,7 @@ function Navbar() {
     <div>
       <nav id="desktop-nav">
         <div className="logo">
-          <a href="#profile">pratham.dev</a>
+          <a href="#profile">pratham.me</a>
         </div>
         <div>
           <ul className="nav-links">

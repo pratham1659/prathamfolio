@@ -1,6 +1,6 @@
 import React from "react";
-import carRental from "../assets/car-rental.webp";
-import coinDom from "../assets/coindom.png";
+import eCommerce from "../assets/ecommerce.png";
+import myInvoice from "../assets/invoice.png";
 
 const Project = () => {
   return (
@@ -15,7 +15,7 @@ const Project = () => {
                 <div className="pro__img">
                   <a target="_blank" href="#noContentRightNow" rel="noreferrer">
                     <img
-                      src={carRental}
+                      src={eCommerce}
                       alt="website"
                       style={{
                         transform: "translateY(0%)",
@@ -27,7 +27,7 @@ const Project = () => {
                 <div className="pro__text">
                   <h3>
                     StyleByPratham
-                    <span className="date-className">(July 2023)</span> 🚗
+                    <span className="date-className">(July 2023)</span>
                   </h3>
                   <p>
                     "StyleByPratham" eCommerce platform developed using React
@@ -92,7 +92,7 @@ const Project = () => {
                 <div className="pro__img">
                   <a target="_blank" href="#noContentRightNow" rel="noreferrer">
                     <img
-                      src={coinDom}
+                      src={myInvoice}
                       alt="website"
                       style={{
                         transform: "translateY(0%)",

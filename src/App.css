@@ -291,18 +291,26 @@ a {
   font-weight: 500;
   line-height: 1.6;
 }
-@media (max-width: 900px) {
+
+@media (max-width: 500px) {
   .hero-text p {
     margin-top: 0rem;
     margin-bottom: 0rem;
     font-size: 1.7rem;
   }
 }
+@media (max-width: 900px) {
+  .hero-text p {
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+  }
+}
 .hero-text span {
   cursor: pointer;
   display: flex;
-  gap: 1.3rem;
-  margin: 2.5rem 0;
+  gap: 1.4rem;
+  margin: 2.5rem 10px;
 }
 .hero-text span a {
   color: #2d2e32;
@@ -407,9 +415,11 @@ a {
 /* CV Download button */
 .btn {
   font-weight: 600;
+  font-size: 11px;
   transition: all 300ms ease;
   padding: 0rem;
-  width: 11rem;
+  width: 9rem;
+  height: 3.8rem;
   border-radius: 2rem;
 }
 
@@ -557,6 +567,12 @@ a {
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
+
+@media (max-width: 500px) {
+  .text-side h3 {
+    margin-bottom: 0rem;
+  }
+}
 .text-side h4 {
   color: #2d2e32;
   font-family: Poppins, sans-serif;
@@ -564,12 +580,25 @@ a {
   line-height: 1.4;
   margin-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  .text-side h4 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
 .text-side p {
   color: #767676;
   font-family: Mulish, sans-serif;
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.5;
+}
+@media (max-width: 500px) {
+  .text-side p {
+    font-size: 1.5rem;
+    padding: 10px 20px; /* 10px top/bottom, 20px left/right */
+    font-weight: 500;
+  }
 }
 .img-side {
   position: relative;
@@ -626,8 +655,8 @@ a {
 }
 .img-side__main-img {
   border-radius: 1.7rem;
-  height: 35rem;
-  width: 41rem;
+  height: 38rem;
+  width: 40rem;
 }
 @media (max-width: 1020px) {
   .img-side__main-img {
@@ -636,8 +665,10 @@ a {
 }
 @media (max-width: 460px) {
   .img-side__main-img {
-    height: auto;
-    width: 90%;
+    width: 100%;
+    height: 20rem;
+    width: 20rem;
+    margin-top: 5rem;
   }
 }
 .work-emoji {
@@ -691,11 +722,24 @@ a {
   margin-bottom: 0rem;
   text-transform: uppercase;
 }
+
+@media (max-width: 500px) {
+  .project-content p {
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+}
 .project-content h3 {
   color: #2d2e32;
   font-size: 2.5rem;
   margin-bottom: 1.6rem;
 }
+@media (max-width: 500px) {
+  .project-content h3 {
+    font-size: 1.6rem;
+  }
+}
+
 .projects-grid {
   grid-gap: 5rem;
   display: grid;
@@ -721,7 +765,7 @@ a {
   .projects-grid .pro__1 {
     flex-direction: column !important;
     gap: 3rem;
-    height: 75rem;
+    height: 70rem;
     margin: 0 auto;
     width: -moz-fit-content;
     width: -webkit-fit-content;
@@ -766,6 +810,7 @@ a {
 @media (max-width: 400px) {
   .projects-grid .pro__text {
     width: 100%;
+    margin-bottom: 4rem;
   }
 }
 .projects-grid .pro__text img {
@@ -863,6 +908,11 @@ a {
     padding: 8rem 0;
   }
 }
+@media (max-width: 500px) {
+  .contact {
+    padding: 8rem 0;
+  }
+}
 .contact__content {
   display: flex;
   flex-direction: column;
@@ -874,14 +924,20 @@ a {
 }
 .contact__title p {
   color: #147efb;
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   font-weight: 700;
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .contact__title p {
+    margin-bottom: 0rem;
+  }
+}
+
 .contact__title h3 {
   color: #2d2e32;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .contact__icons {
   display: flex;
@@ -892,9 +948,9 @@ a {
 @media (max-width: 750px) {
   .contact__icons {
     flex-direction: column;
-    gap: 5rem;
+    gap: 1rem;
+    padding: 0px 30px;
     justify-content: center;
-    text-align: center;
   }
 }
 .contact__icon-box {
@@ -904,7 +960,8 @@ a {
 }
 @media (max-width: 750px) {
   .contact__icon-box {
-    flex-direction: column;
+    flex-direction: row;
+    line-height: 1.5rem;
   }
 }
 .contact__icon-box span {
@@ -957,6 +1014,7 @@ footer h3 {
   .footerc {
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 2rem 0;
     justify-content: center;
     text-align: center;
   }

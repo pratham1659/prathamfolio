@@ -10,14 +10,16 @@ function Navbar() {
   return (
     <div>
       <nav id="desktop-nav">
-        <div className="logo">John Doe</div>
+        <div className="logo">
+          <a href="#profile">pratham.dev</a>
+        </div>
         <div>
           <ul className="nav-links">
             <li>
-              <a href="#about">About</a>
+              <a href="#profile">Home</a>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <a href="#about">About</a>
             </li>
             <li>
               <a href="#projects">Projects</a>
@@ -29,7 +31,9 @@ function Navbar() {
         </div>
       </nav>
       <nav id="hamburger-nav">
-        <div className="logo">John Doe</div>
+        <h3 className="logo">
+          <a href="#profile">pratham.dev</a>
+        </h3>
         <div className={`hamburger-menu ${menuOpen ? "open" : ""}`}>
           <div className="hamburger-icon" onClick={toggleMenu}>
             <span></span>
@@ -38,13 +42,13 @@ function Navbar() {
           </div>
           <ul className={`menu-links ${menuOpen ? "open" : ""}`}>
             <li>
-              <a href="#about" onClick={toggleMenu}>
-                About
+              <a href="#profile" onClick={toggleMenu}>
+                Home
               </a>
             </li>
             <li>
-              <a href="#experience" onClick={toggleMenu}>
-                Experience
+              <a href="#about" onClick={toggleMenu}>
+                About
               </a>
             </li>
             <li>

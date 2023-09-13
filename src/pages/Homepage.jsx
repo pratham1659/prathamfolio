@@ -2,23 +2,21 @@ import React from "react";
 import Navbar from "./Navbar";
 import Profile from "./Profile";
 import About from "./About";
-import Experience from "./Experience";
-import Projects from "./Projects";
-import Contact from "./Contact";
 import Footer from "./Footer";
+import Contact from "./Contact";
+import Project from "./Project";
 
-const Home = () => {
+const Homepage = () => {
   return (
     <div>
       <Navbar />
       <Profile />
       <About />
-      <Experience />
-      <Projects />
+      <Project />
       <Contact />
       <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Homepage;

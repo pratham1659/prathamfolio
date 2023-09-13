@@ -2,6 +2,21 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Default Light Mode */
+:root {
+  --primary-color: white;
+  --primary-color-2: rgb(250, 250, 250);
+  --primary-color-3: rgb(181, 181, 181);
+  --background-color: rgb(255, 255, 255);
+  --secondary-color: black;
+  --secondary-color-2: rgb(85, 85, 85);
+  --button-background: rgb(53, 53, 53);
+  --button-text-hover: grey;
+  --button-border: rgb(53, 53, 53) 0.1rem solid;
+  --button-border-2: rgb(255, 255, 255) 0.1rem solid;
+  --container-border: rgb(163, 163, 163);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -279,7 +294,7 @@ a {
 @media (max-width: 900px) {
   .hero-text p {
     margin-top: 0rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
     font-size: 1.7rem;
   }
 }
@@ -323,8 +338,8 @@ a {
   .hero-text img {
     height: 3.5rem;
     width: 3.5rem;
-    right: 4rem;
-    top: 6.4rem;
+    right: 7rem;
+    top: 3.8rem;
   }
 }
 @media (max-width: 400px) {
@@ -388,6 +403,46 @@ a {
     transform: scale(1.2); /* Zoom in to 1.2x size */
   }
 }
+
+/* CV Download button */
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 0rem;
+  width: 11rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: var(--button-border);
+  color: var(--secondary-color-2);
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: var(--button-background);
+  color: var(--primary-color);
+}
+
+.btn-color-1:hover {
+  background: var(--secondary-color);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: var(--button-border);
+  background: var(--secondary-color);
+}
+/* End Here */
 
 .skills {
   align-items: center;
@@ -922,4 +977,3 @@ footer h3 {
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
 }
-/*# sourceMappingURL=main.51b3af34.css.map*/

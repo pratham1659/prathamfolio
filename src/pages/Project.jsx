@@ -159,7 +159,6 @@ const Project = () => {
                   </div>
                 </div>
               </div>
-              <div className="pro pro__1 reversed-proj"></div>
             </div>
           </div>
         </div>

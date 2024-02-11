@@ -20,21 +20,10 @@ const Profile = () => {
             <div className="hero-main">
               <div className="hero-text">
                 <h1>Full-Stack React Developer</h1>
-                <img
-                  src={waveHand}
-                  alt="waving_hand"
-                  className="shaking-hand"
-                />
-                <p>
-                  Hi, I'm Pratham Kumar. A passionate Full-Stack React Developer
-                  based in Bangalore, India 🇮🇳. 📍
-                </p>
+                <img src={waveHand} alt="waving_hand" className="shaking-hand" />
+                <p>Hi, I'm Pratham Kumar. A passionate Full-Stack React Developer based in Bangalore, India 🇮🇳. 📍</p>
                 <span>
-                  <a
-                    aria-label="linkedin"
-                    rel="noreferrer"
-                    target="_blank"
-                    href={linkedin}>
+                  <a aria-label="linkedin" rel="noreferrer" target="_blank" href={linkedin}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -53,11 +42,7 @@ const Profile = () => {
                       <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
                     </svg>
                   </a>
-                  <a
-                    aria-label="github"
-                    rel="noreferrer"
-                    target="_blank"
-                    href={github}>
+                  <a aria-label="github" rel="noreferrer" target="_blank" href={github}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="32"
@@ -76,9 +61,7 @@ const Profile = () => {
                   <button className="btn btn-color-2" onClick={openPdfInNewTab}>
                     Download CV
                   </button>
-                  <button
-                    className="btn btn-color-1"
-                    onClick={() => (window.location.href = "#contact")}>
+                  <button className="btn btn-color-1" onClick={() => (window.location.href = "#contact")}>
                     Contact Info
                   </button>
                 </span>

@@ -1,18 +1,8 @@
 import React from "react";
-import axios from "axios";
 import { FaRegCopyright } from "react-icons/fa6";
 
 const linkedin = "https://www.linkedin.com/in/pratham1659";
 const github = "https://github.com/pratham1659";
-
-const commitChanges = async () => {
-  try {
-    const response = await axios.post("http://localhost:4000/commit");
-    console.log(response.data);
-  } catch (error) {
-    console.error("Error committing changes:", error);
-  }
-};
 
 const Footer = () => {
   return (

@@ -1,27 +1,29 @@
 const express = require("express");
-const moment = require("moment");
+const cors = require("cors");
 const simpleGit = require("simple-git");
+const moment = require("moment");
 const git = simpleGit();
 
 const app = express();
-const PORT = 4000;
+app.use(cors());
+app.use(express.json());
 
 app.post("/commit", async (req, res) => {
   const DATE = moment()
     .subtract(1, "M")
-    .subtract(1, "d")
+    .add(10, "d")
     .add(Math.floor(Math.random() * 24), "hours")
     .add(Math.floor(Math.random() * 60), "minutes")
     .format();
 
-  const commitMessage = "new model file added";
-
   try {
-    await git.add("./*").commit(commitMessage, { "--date": DATE }).push("origin", "main");
+    await git.add("./*").commit("New model file added", { "--date": DATE }).push("origin", "main");
     res.json({ message: "Changes pushed successfully!", date: DATE });
-  } catch (error) {
-    res.status(500).json({ message: "Error committing changes", error });
+  } catch (err) {
+    res.status(500).json({ error: "Failed to push changes", details: err });
   }
 });
 
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(4000, () => {
+  console.log("Express server is running on http://localhost:4000");
+});

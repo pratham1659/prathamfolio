@@ -19,11 +19,15 @@ app.post("/commit", async (req, res) => {
   // Log the generated DATE to the console
   console.log("Generated DATE:", DATE);
 
+  // Return the generated DATE to the client (before pushing to Git)
+  res.json({ message: "Generated date checked successfully", date: DATE });
+
+  // Optionally, push the changes to git (you can remove this if you don't want to push)
   // try {
   //   await git.add("./*").commit("handle download error added", { "--date": DATE }).push("origin", "main");
-  //   res.json({ message: "Changes pushed successfully!", date: DATE });
+  //   console.log("Git push successful!");
   // } catch (err) {
-  //   res.status(500).json({ error: "Failed to push changes", details: err });
+  //   console.log("Error during Git push:", err);
   // }
 });
 

@@ -9,9 +9,8 @@ app.use(cors());
 app.use(express.json());
 
 app.post("/commit", async (req, res) => {
-  const DATE = moment()
-    .subtract(1, "M") // Subtract one month
-    .subtract(1, "d") // Subtract one day
+  // Set the base date to October 14, 2023
+  const DATE = moment("2023-10-14")
     .add(Math.floor(Math.random() * 24), "hours") // Add random hours (0-23)
     .add(Math.floor(Math.random() * 60), "minutes") // Add random minutes (0-59)
     .format(); // Format the date as a string
@@ -23,12 +22,12 @@ app.post("/commit", async (req, res) => {
   res.json({ message: "Generated date checked successfully", date: DATE });
 
   // Optionally, push the changes to git (you can remove this if you don't want to push)
-  // try {
-  //   await git.add("./*").commit("handle download error added", { "--date": DATE }).push("origin", "main");
-  //   console.log("Git push successful!");
-  // } catch (err) {
-  //   console.log("Error during Git push:", err);
-  // }
+  try {
+    await git.add("./*").commit("handle download error added", { "--date": DATE }).push("origin", "main");
+    console.log("Git push successful!");
+  } catch (err) {
+    console.log("Error during Git push:", err);
+  }
 });
 
 app.listen(4000, () => {

@@ -1046,3 +1046,11 @@ footer h3 {
   transform: scale(1.2);
   transition: all 0.2s ease-in-out;
 }
+
+.icons {
+  font-size: 1.3rem;
+}
+
+.commit {
+  cursor: pointer;
+}
